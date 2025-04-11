@@ -26,7 +26,7 @@ alloc = []
 
 [dev-dependencies]
 crossbeam = "0.8.1"
-termion = "4.0.0"
+crossterm = "0.29.0"
 
 [package.metadata.docs.rs]
 all-features = true
