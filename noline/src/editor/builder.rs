@@ -2,12 +2,12 @@
 
 use core::marker::PhantomData;
 
+use super::{async_editor, sync_editor};
 use crate::{
     error::NolineError,
     history::{History, NoHistory, SliceHistory},
     line_buffer::{Buffer, LineBuffer, NoBuffer, SliceBuffer},
 };
-use super::{async_editor, sync_editor};
 
 #[cfg(any(test, doc, feature = "alloc", feature = "std"))]
 use crate::{history::UnboundedHistory, line_buffer::UnboundedBuffer};
