@@ -1,5 +1,5 @@
-use noline::builder::EditorBuilder;
 use crossterm::terminal::{disable_raw_mode, enable_raw_mode};
+use noline::builder::EditorBuilder;
 
 use tokio::io;
 use tokio::io::{AsyncReadExt, AsyncWriteExt};
@@ -57,7 +57,7 @@ async fn main() {
             let s = format!("Read: '{}'\n\r", line);
             io.stdout.write_all(s.as_bytes()).await.unwrap();
         }
-	disable_raw_mode().unwrap();
+        disable_raw_mode().unwrap();
     });
 
     match term_task.await {
