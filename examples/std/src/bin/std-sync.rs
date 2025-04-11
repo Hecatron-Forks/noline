@@ -1,6 +1,6 @@
-use noline::builder::EditorBuilder;
-use embedded_io::{ErrorType, Read as EmbRead, Write as EmbWrite};
 use crossterm::terminal::{disable_raw_mode, enable_raw_mode};
+use embedded_io::{ErrorType, Read as EmbRead, Write as EmbWrite};
+use noline::builder::EditorBuilder;
 use std::io::{Read, Stdin, Stdout, Write};
 
 pub struct IOWrapper {
