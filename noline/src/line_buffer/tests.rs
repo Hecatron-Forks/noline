@@ -1,6 +1,5 @@
-use crate::utf8::Utf8Char;
-
 use super::*;
+use crate::utf8::Utf8Char;
 
 #[test]
 fn slice_buffer() {

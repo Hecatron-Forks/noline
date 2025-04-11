@@ -1,14 +1,11 @@
-use std::vec::Vec;
-
-use std::string::String;
-
+use super::*;
 use crate::history::{History, NoHistory, SliceHistory, UnboundedHistory};
 use crate::input::ControlCharacter::*;
 use crate::line_buffer::{Buffer, LineBuffer, UnboundedBuffer};
 use crate::terminal::{Cursor, Terminal};
 use crate::testlib::{csi, MockTerminal, ToByteVec};
-
-use super::*;
+use std::string::String;
+use std::vec::Vec;
 
 struct Editor<B: Buffer, H: History> {
     buffer: LineBuffer<B>,
