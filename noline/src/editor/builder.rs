@@ -3,12 +3,11 @@
 use core::marker::PhantomData;
 
 use crate::{
-    async_editor,
     error::NolineError,
     history::{History, NoHistory, SliceHistory},
     line_buffer::{Buffer, LineBuffer, NoBuffer, SliceBuffer},
-    sync_editor,
 };
+use super::{async_editor, sync_editor};
 
 #[cfg(any(test, doc, feature = "alloc", feature = "std"))]
 use crate::{history::UnboundedHistory, line_buffer::UnboundedBuffer};
