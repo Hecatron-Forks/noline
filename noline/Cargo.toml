@@ -1,7 +1,7 @@
 [package]
 name = "noline"
 version = "0.5.1"
-edition = "2021"
+edition = "2024"
 authors = ["Eivind Alexander Bergem <eivind@rustnekretser.no>"]
 license = "MPL-2.0"
 description = "A no_std line editor"

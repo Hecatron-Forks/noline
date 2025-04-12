@@ -1,6 +1,6 @@
 [package]
 authors = ["Matt Spencer <matthew@thespencers.me.uk>"]
-edition = "2018"
+edition = "2024"
 name = "rp2040-embassy"
 version = "0.1.0"
 
